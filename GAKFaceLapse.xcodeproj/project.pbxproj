@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		591E71871993385F0023560D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591E71861993385F0023560D /* Foundation.framework */; };
+		591E71891993385F0023560D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591E71881993385F0023560D /* CoreGraphics.framework */; };
+		591E718B1993385F0023560D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591E718A1993385F0023560D /* UIKit.framework */; };
+		591E71911993385F0023560D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 591E718F1993385F0023560D /* InfoPlist.strings */; };
+		591E71931993385F0023560D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E71921993385F0023560D /* main.m */; };
+		591E71971993385F0023560D /* GAKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E71961993385F0023560D /* GAKAppDelegate.m */; };
+		591E71991993385F0023560D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591E71981993385F0023560D /* Images.xcassets */; };
+		591E71A01993385F0023560D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591E719F1993385F0023560D /* XCTest.framework */; };
+		591E71A11993385F0023560D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591E71861993385F0023560D /* Foundation.framework */; };
+		591E71A21993385F0023560D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591E718A1993385F0023560D /* UIKit.framework */; };
+		591E71AA1993385F0023560D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 591E71A81993385F0023560D /* InfoPlist.strings */; };
+		591E71AC1993385F0023560D /* GAKFaceLapseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E71AB1993385F0023560D /* GAKFaceLapseTests.m */; };
+		591E71B8199338B60023560D /* GAKOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E71B6199338B60023560D /* GAKOverlayViewController.m */; };
+		591E71B9199338B60023560D /* GAKOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591E71B7199338B60023560D /* GAKOverlayViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		591E71A31993385F0023560D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 591E717B1993385F0023560D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591E71821993385F0023560D;
+			remoteInfo = GAKFaceLapse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		591E71831993385F0023560D /* GAKFaceLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAKFaceLapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		591E71861993385F0023560D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		591E71881993385F0023560D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		591E718A1993385F0023560D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		591E718E1993385F0023560D /* GAKFaceLapse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GAKFaceLapse-Info.plist"; sourceTree = "<group>"; };
+		591E71901993385F0023560D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		591E71921993385F0023560D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		591E71941993385F0023560D /* GAKFaceLapse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GAKFaceLapse-Prefix.pch"; sourceTree = "<group>"; };
+		591E71951993385F0023560D /* GAKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAKAppDelegate.h; sourceTree = "<group>"; };
+		591E71961993385F0023560D /* GAKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAKAppDelegate.m; sourceTree = "<group>"; };
+		591E71981993385F0023560D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		591E719E1993385F0023560D /* GAKFaceLapseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAKFaceLapseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		591E719F1993385F0023560D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		591E71A71993385F0023560D /* GAKFaceLapseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GAKFaceLapseTests-Info.plist"; sourceTree = "<group>"; };
+		591E71A91993385F0023560D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		591E71AB1993385F0023560D /* GAKFaceLapseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAKFaceLapseTests.m; sourceTree = "<group>"; };
+		591E71B5199338B60023560D /* GAKOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAKOverlayViewController.h; sourceTree = "<group>"; };
+		591E71B6199338B60023560D /* GAKOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAKOverlayViewController.m; sourceTree = "<group>"; };
+		591E71B7199338B60023560D /* GAKOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAKOverlayViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		591E71801993385F0023560D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591E71891993385F0023560D /* CoreGraphics.framework in Frameworks */,
+				591E718B1993385F0023560D /* UIKit.framework in Frameworks */,
+				591E71871993385F0023560D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591E719B1993385F0023560D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591E71A01993385F0023560D /* XCTest.framework in Frameworks */,
+				591E71A21993385F0023560D /* UIKit.framework in Frameworks */,
+				591E71A11993385F0023560D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		591E717A1993385F0023560D = {
+			isa = PBXGroup;
+			children = (
+				591E718C1993385F0023560D /* GAKFaceLapse */,
+				591E71A51993385F0023560D /* GAKFaceLapseTests */,
+				591E71851993385F0023560D /* Frameworks */,
+				591E71841993385F0023560D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		591E71841993385F0023560D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				591E71831993385F0023560D /* GAKFaceLapse.app */,
+				591E719E1993385F0023560D /* GAKFaceLapseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		591E71851993385F0023560D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				591E71861993385F0023560D /* Foundation.framework */,
+				591E71881993385F0023560D /* CoreGraphics.framework */,
+				591E718A1993385F0023560D /* UIKit.framework */,
+				591E719F1993385F0023560D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		591E718C1993385F0023560D /* GAKFaceLapse */ = {
+			isa = PBXGroup;
+			children = (
+				591E71951993385F0023560D /* GAKAppDelegate.h */,
+				591E71961993385F0023560D /* GAKAppDelegate.m */,
+				591E71B5199338B60023560D /* GAKOverlayViewController.h */,
+				591E71B6199338B60023560D /* GAKOverlayViewController.m */,
+				591E71B7199338B60023560D /* GAKOverlayViewController.xib */,
+				591E71981993385F0023560D /* Images.xcassets */,
+				591E718D1993385F0023560D /* Supporting Files */,
+			);
+			path = GAKFaceLapse;
+			sourceTree = "<group>";
+		};
+		591E718D1993385F0023560D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				591E718E1993385F0023560D /* GAKFaceLapse-Info.plist */,
+				591E718F1993385F0023560D /* InfoPlist.strings */,
+				591E71921993385F0023560D /* main.m */,
+				591E71941993385F0023560D /* GAKFaceLapse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		591E71A51993385F0023560D /* GAKFaceLapseTests */ = {
+			isa = PBXGroup;
+			children = (
+				591E71AB1993385F0023560D /* GAKFaceLapseTests.m */,
+				591E71A61993385F0023560D /* Supporting Files */,
+			);
+			path = GAKFaceLapseTests;
+			sourceTree = "<group>";
+		};
+		591E71A61993385F0023560D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				591E71A71993385F0023560D /* GAKFaceLapseTests-Info.plist */,
+				591E71A81993385F0023560D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		591E71821993385F0023560D /* GAKFaceLapse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591E71AF1993385F0023560D /* Build configuration list for PBXNativeTarget "GAKFaceLapse" */;
+			buildPhases = (
+				591E717F1993385F0023560D /* Sources */,
+				591E71801993385F0023560D /* Frameworks */,
+				591E71811993385F0023560D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GAKFaceLapse;
+			productName = GAKFaceLapse;
+			productReference = 591E71831993385F0023560D /* GAKFaceLapse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		591E719D1993385F0023560D /* GAKFaceLapseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591E71B21993385F0023560D /* Build configuration list for PBXNativeTarget "GAKFaceLapseTests" */;
+			buildPhases = (
+				591E719A1993385F0023560D /* Sources */,
+				591E719B1993385F0023560D /* Frameworks */,
+				591E719C1993385F0023560D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				591E71A41993385F0023560D /* PBXTargetDependency */,
+			);
+			name = GAKFaceLapseTests;
+			productName = GAKFaceLapseTests;
+			productReference = 591E719E1993385F0023560D /* GAKFaceLapseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		591E717B1993385F0023560D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GAK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Kimberley;
+				TargetAttributes = {
+					591E719D1993385F0023560D = {
+						TestTargetID = 591E71821993385F0023560D;
+					};
+				};
+			};
+			buildConfigurationList = 591E717E1993385F0023560D /* Build configuration list for PBXProject "GAKFaceLapse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 591E717A1993385F0023560D;
+			productRefGroup = 591E71841993385F0023560D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				591E71821993385F0023560D /* GAKFaceLapse */,
+				591E719D1993385F0023560D /* GAKFaceLapseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		591E71811993385F0023560D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591E71911993385F0023560D /* InfoPlist.strings in Resources */,
+				591E71991993385F0023560D /* Images.xcassets in Resources */,
+				591E71B9199338B60023560D /* GAKOverlayViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591E719C1993385F0023560D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591E71AA1993385F0023560D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		591E717F1993385F0023560D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591E71971993385F0023560D /* GAKAppDelegate.m in Sources */,
+				591E71931993385F0023560D /* main.m in Sources */,
+				591E71B8199338B60023560D /* GAKOverlayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591E719A1993385F0023560D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591E71AC1993385F0023560D /* GAKFaceLapseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		591E71A41993385F0023560D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 591E71821993385F0023560D /* GAKFaceLapse */;
+			targetProxy = 591E71A31993385F0023560D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		591E718F1993385F0023560D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591E71901993385F0023560D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		591E71A81993385F0023560D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591E71A91993385F0023560D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		591E71AD1993385F0023560D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		591E71AE1993385F0023560D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		591E71B01993385F0023560D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GAKFaceLapse/GAKFaceLapse-Prefix.pch";
+				INFOPLIST_FILE = "GAKFaceLapse/GAKFaceLapse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		591E71B11993385F0023560D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GAKFaceLapse/GAKFaceLapse-Prefix.pch";
+				INFOPLIST_FILE = "GAKFaceLapse/GAKFaceLapse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		591E71B31993385F0023560D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GAKFaceLapse.app/GAKFaceLapse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GAKFaceLapse/GAKFaceLapse-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GAKFaceLapseTests/GAKFaceLapseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		591E71B41993385F0023560D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GAKFaceLapse.app/GAKFaceLapse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GAKFaceLapse/GAKFaceLapse-Prefix.pch";
+				INFOPLIST_FILE = "GAKFaceLapseTests/GAKFaceLapseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		591E717E1993385F0023560D /* Build configuration list for PBXProject "GAKFaceLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591E71AD1993385F0023560D /* Debug */,
+				591E71AE1993385F0023560D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591E71AF1993385F0023560D /* Build configuration list for PBXNativeTarget "GAKFaceLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591E71B01993385F0023560D /* Debug */,
+				591E71B11993385F0023560D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		591E71B21993385F0023560D /* Build configuration list for PBXNativeTarget "GAKFaceLapseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591E71B31993385F0023560D /* Debug */,
+				591E71B41993385F0023560D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 591E717B1993385F0023560D /* Project object */;
+}
